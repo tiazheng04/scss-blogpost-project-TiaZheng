@@ -1,0 +1,46 @@
+@import "./variable" $fontMain: @function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+//px's are for monkeys, rem OR relative units, 1rem = 10px, vw = viewport width AND VH= viewport height
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem === 10px
+  font-family: "Permanent Marker", cursive;
+}
+.blogp1 {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(color(primary), 0.5),
+      rgba(color(primary-light), 0.5)
+    ),
+    url(img/chesspieces.jpg);
+  background-size: cover;
+  //background-position: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+.blogp1-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+}
+.blogp1-primary {
+  color: #fff;
+  font-size: 10rem;
+}
+.blogp1-primary-main {
+  display: block;
+  letter-spacing: 1rem;
+  text-shadow: #333 5px 5px;
+}

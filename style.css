@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Permanent Marker", cursive;
+}
+
+.blogp1 {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(154, 236, 218, 0.5)), to(rgba(162, 149, 238, 0.5))), url(img/chesspieces.jpg);
+  background-image: linear-gradient(to right bottom, rgba(154, 236, 218, 0.5), rgba(162, 149, 238, 0.5)), url(img/chesspieces.jpg);
+  background-size: cover;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+
+.blogp1-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.blogp1-primary {
+  color: #fff;
+  font-size: 10rem;
+}
+
+.blogp1-primary-main {
+  display: block;
+  letter-spacing: 1rem;
+  text-shadow: #333 5px 5px;
+}
+/*# sourceMappingURL=style.css.map */
