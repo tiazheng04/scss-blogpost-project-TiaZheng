@@ -8,36 +8,32 @@ body {
   font-family: "Permanent Marker", cursive;
 }
 
-.blogp1 {
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(154, 236, 218, 0.5)), to(rgba(162, 149, 238, 0.5))), url(img/chesspieces.jpg);
-  background-image: linear-gradient(to right bottom, rgba(154, 236, 218, 0.5), rgba(162, 149, 238, 0.5)), url(img/chesspieces.jpg);
+.container {
+  height: 300vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url(img/container.jpg);
   background-size: cover;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.blogp1-text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-transform: uppercase;
+.post {
+  height: 60vh;
+  width: 60vw;
+  background-color: #d9f2f7;
   text-align: center;
-}
-
-.blogp1-primary {
-  color: #fff;
-  font-size: 10rem;
-}
-
-.blogp1-primary-main {
-  display: block;
-  letter-spacing: 1rem;
-  text-shadow: #333 5px 5px;
+  font-size: 3rem;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

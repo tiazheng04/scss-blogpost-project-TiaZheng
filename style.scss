@@ -1,46 +1,30 @@
-@import "./variable" $fontMain: @function color($color-name) {
-  @return map-get($colors, $color-name);
-}
-
-//px's are for monkeys, rem OR relative units, 1rem = 10px, vw = viewport width AND VH= viewport height
+@import "./variable";
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%; //1rem === 10px
-  font-family: "Permanent Marker", cursive;
+  font-family: $fontMain;
 }
-.blogp1 {
-  height: 100vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(color(primary), 0.5),
-      rgba(color(primary-light), 0.5)
-    ),
-    url(img/chesspieces.jpg);
+.container {
+  height: 300vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url(img/container.jpg);
   background-size: cover;
-  //background-position: center;
-  /* display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  position: relative;
 }
-.blogp1-text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
+.post {
+  height: 60vh;
+  width: 60vw;
+  background-color: $colors;
   text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
 }
-.blogp1-primary {
-  color: #fff;
-  font-size: 10rem;
-}
-.blogp1-primary-main {
-  display: block;
-  letter-spacing: 1rem;
-  text-shadow: #333 5px 5px;
+.post-1 {
 }
