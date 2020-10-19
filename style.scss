@@ -1,11 +1,12 @@
 @import "./variable";
+@import "./img";
+@import "./textdesign";
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%; //1rem === 10px
-  font-family: $fontMain;
 }
 .container {
   height: 300vh;
@@ -19,12 +20,20 @@ body {
   flex-direction: column;
 }
 .post {
-  height: 60vh;
+  height: 70vh;
   width: 60vw;
   background-color: $colors;
-  text-align: center;
-  font-size: 3rem;
-  text-decoration: underline;
+  border-style: groove;
+  border-color: #000;
+  border-radius: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 4rem 2rem 4rem;
 }
-.post-1 {
+
+.link {
+  padding: 1rem;
+  color: purple;
 }

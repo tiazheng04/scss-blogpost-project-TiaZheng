@@ -1,3 +1,37 @@
+.img-1 {
+  height: 40vh;
+  width: 20vw;
+  background-image: url(img/Bobby_Fischer.jpg);
+  background-size: cover;
+}
+
+.img-2 {
+  height: 30vh;
+  width: 15vw;
+  background-image: url(img/benefits.jpg);
+  background-size: cover;
+}
+
+.img-3 {
+  height: 25vh;
+  width: 20vw;
+  background-image: url(img/chesspieces.jpg);
+  background-size: cover;
+}
+
+.Header {
+  font-size: 3rem;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: underline;
+  font-weight: 100;
+}
+
+.text {
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+
 html,
 body {
   margin: 0;
@@ -5,7 +39,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Permanent Marker", cursive;
 }
 
 .container {
@@ -29,11 +62,29 @@ body {
 }
 
 .post {
-  height: 60vh;
+  height: 70vh;
   width: 60vw;
   background-color: #d9f2f7;
-  text-align: center;
-  font-size: 3rem;
-  text-decoration: underline;
+  border-style: groove;
+  border-color: #000;
+  border-radius: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 4rem 2rem 4rem;
+}
+
+.link {
+  padding: 1rem;
+  color: purple;
 }
 /*# sourceMappingURL=style.css.map */
