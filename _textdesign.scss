@@ -1,3 +1,17 @@
+.title {
+  font-size: 5rem;
+  color: $colors;
+  font-family: "Solway", serif;
+  text-decoration: underline;
+}
+
+.by {
+  color: $colors;
+  font-family: "Solway", serif;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
 .Header {
   font-size: 3rem;
   font-family: $fontHeader;

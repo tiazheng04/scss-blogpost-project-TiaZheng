@@ -9,7 +9,7 @@ body {
   font-size: 62.5%; //1rem === 10px
 }
 .container {
-  height: 300vh;
+  height: 350vh;
   width: 100vw;
   margin: 0;
   background-image: url(img/container.jpg);
@@ -19,8 +19,16 @@ body {
   justify-content: space-around;
   flex-direction: column;
 }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem 0rem 1rem;
+}
+
 .post {
-  height: 70vh;
+  height: 80vh;
   width: 60vw;
   background-color: $colors;
   border-style: groove;
@@ -30,10 +38,33 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding: 4rem 4rem 2rem 4rem;
+  padding: 2rem 2rem;
+}
+
+.post-3 {
+  padding-bottom: 4rem;
+}
+
+.items {
+  height: 30vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-1 {
+  height: 20vh;
+  width: 20vw;
 }
 
 .link {
-  padding: 1rem;
-  color: purple;
+  height: 3rem;
+  position: relative;
+  top: 2rem;
+  border-color: rgb(48, 40, 70);
+  border-radius: 10%;
+  border-width: 0.15rem;
+  background-color: rgb(199, 202, 250);
+  color: rgb(117, 74, 141);
 }
